@@ -1,0 +1,15 @@
+格式:diff [option] file1 file2
+逐行比较
+
+1.三种展示格式 默认,-c(context),-u(unified)
+
+2.参数
+	-i 忽略文件内容的大小写
+	-q 只显示有无差异，不显示详细信息
+	-r --recursive 递归
+	-x --exclude 排除某文件或目录
+3.打补丁
+diff a.txt b.txt > patch.txt
+patch a.txt patch.txt
+
+

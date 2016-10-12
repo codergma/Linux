@@ -1,0 +1,16 @@
+usage:crontab [-u user] file
+      crontab [ -u user ] [ -i ] { -e | -l | -r }
+
+    -e  (edit user's crontab)
+    -l  (list user's crontab)
+    -r  (delete user's crontab)
+    -i  (prompt before deleting user's crontab)
+#cron服务相关命令
+/sbin/service crond status/start/stop/restart/reload
+
+cron默认配置了调度任务，分别为：hourly、daily、weekly、mouthly，默认配置文件为/etc/anacrontab
+将需要执行的脚本放到相应的目录下即可，目录分别为：
+/etc/cron.hourly
+/etc/cron.daily
+/etc/cron.weekly
+/ect/cron.mouthly

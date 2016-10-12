@@ -1,0 +1,1 @@
+wget -P /tmp ftp://10.8.5.3:/home/map/test.sh 

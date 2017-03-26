@@ -1,0 +1,11 @@
+sed [option] 命令　文件
+
+-n 取消自动打印模式空间,(不加-n,默认会把整个文件内容打印出来,如果只想打印发生改变的行，需要加-n并在命令中加p)
+   sed -n  's/executeHook()/executeHook($arrInput)/pg' ./manager/ModifyConfig.php
+
+-i[扩展名], --in-place[=扩展名]    直接修改文件(如果指定扩展名就备份文件,i和扩展名之间没空格)
+
+
+eg:
+sed用来替换多个文件中的内容, 文件位置用的是命令，需要用反引号，并且grep的字符串要加引号
+    sed -i 's/executeHook()/executeHook($arrInput)/g' `grep 'executeHook()' -rl /home/map/odp_settlement/app/settlementui/actions/`

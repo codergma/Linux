@@ -1,0 +1,7 @@
+服务管理工具之一
+systemctl 列出正在运行的服务
+systemctl start/stop/restart/status firewalld.service 开启，关闭，重启，查看状态
+systemctl enable/disable/is-enable firewalld.service  开机时启用或禁用一个服务,查看服务是否开机启动
+systemctl list-unit-files| grep enable 查看已经启动的服务
+sytemctl --failed 查看启动失败的服务
+

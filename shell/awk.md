@@ -16,5 +16,5 @@ awk [-F  field-separator]  'commands'  input-file(s)
 > 其中，-f选项加载awk-script-file中的awk脚本，input-file(s)跟上面的是一样的。
 
 
-#### 统计一个文件中单词出现的频率:  
+统计一个文件中单词出现的频率:  
 ` awk '{for (i=1;i<=NF;i++) {print $i} }' words.txt | sort | uniq -c | sort -r | head -10 `
